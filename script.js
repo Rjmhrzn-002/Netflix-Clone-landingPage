@@ -5,9 +5,9 @@ const app = {
   },
 
   init: () => {
-    app.$.questions.forEach((event) => {
-      event.addEventListener("click", () => {
-        const answerSpan = event.querySelector(".list-answer");
+    app.$.questions.forEach((liElement) => {
+      liElement.addEventListener("click", () => {
+        const answerSpan = liElement.querySelector(".list-answer");
 
         answerSpan.classList.toggle("hidden");
       });
